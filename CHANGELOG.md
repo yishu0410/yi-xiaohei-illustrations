@@ -37,3 +37,7 @@
 
 - 小黑的全部设定（`references/xiaohei-ip.md` 一字未改）。
 - 风格 DNA 主体条款、8 种构图、反复刻清单、14 张原作者案例图。
+
+## 2026-10-01 — 目录结构扁平化
+
+仓库最初把 skill 放在内层目录 `ian-xiaohei-illustrations/`，导致 GitHub zip 下载后解压，安装器在根目录找不到 `SKILL.md`。现改为仓库根目录即 skill 本体（README / CHANGELOG / NOTICE / LICENSE 与 `SKILL.md` 同级），zip 解压后可直接安装。
