@@ -20,8 +20,10 @@
 
 ## 目录结构
 
+仓库根目录即 skill 本体，下载 zip 解压后可直接安装（不要再往里找一层）：
+
 ```
-ian-xiaohei-illustrations/
+.
 ├── SKILL.md                    调度层：触发词 + 5 步工作流 + 判断规则
 ├── references/
 │   ├── style-dna.md            风格宪法：白底 / 黑线稿 / 留白 35% / 三色克制
@@ -38,12 +40,23 @@ ian-xiaohei-illustrations/
 
 ## 安装
 
+方式一（推荐，适合 zip 用户）：下载仓库 zip → 解压 → 把解压出来的整个文件夹（名字随意，建议 `ian-xiaohei-illustrations`）放进 skills 目录即可，里面第一层就应该有 `SKILL.md`。
+
 ```bash
-git clone https://github.com/<your-name>/ian-xiaohei-illustrations.git
-cp -R ian-xiaohei-illustrations/ian-xiaohei-illustrations ~/.workbuddy/skills/
+# WorkBuddy
+cp -R ~/Downloads/yi-xiaohei-illustrations-main ~/.workbuddy/skills/ian-xiaohei-illustrations
+
+# Claude Code
+cp -R ~/Downloads/yi-xiaohei-illustrations-main ~/.claude/skills/ian-xiaohei-illustrations
 ```
 
-或直接把内层 `ian-xiaohei-illustrations` 目录拷进你的 skills 目录（WorkBuddy / Claude Code 通用）。
+方式二（git）：
+
+```bash
+git clone https://github.com/yishu0410/yi-xiaohei-illustrations.git ~/.workbuddy/skills/ian-xiaohei-illustrations
+```
+
+装完确认：`~/.workbuddy/skills/ian-xiaohei-illustrations/SKILL.md` 存在即生效，无需重启。
 
 ## 用法
 
